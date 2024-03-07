@@ -1,0 +1,17 @@
+<div class="container mt-4">
+    <div class="mb-4">
+      <input type="search" class="form-control" placeholder="Search for items...">
+    </div>
+    <div class="row">
+      <div class="col-sm-4" *ngFor="let item of items">
+        <div class="card" style="width: 18rem; cursor: pointer; margin-bottom: 20px;">
+          <img src="{{ item.image }}" class="card-img-top" alt="{{ item.itemName }}" width="150" height="150">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.itemName }}</h5>
+            <p class="card-text">{{ item.itemPrice }}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
